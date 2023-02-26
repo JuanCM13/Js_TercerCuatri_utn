@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <!--El metodo por default es el get, lo que vimos en php
+    El action es a donde mandamos esa petision, si no sabemos donde lo mandamos
+    le borramos la prop o le clavamos un #-->
+    <form action="#" method="">
+
+        <!--Deja la sangria como un comentario o algo asi-->
+        <blockquote>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corrupti excepturi aliquam a. Nisi voluptatum architecto vitae distinctio iure nobis corrupti est quae, temporibus autem, veniam maxime praesentium beatae quasi?
+        </blockquote>
+
+        <!--Es una etiqueta semantica, osea que puede llegar a ser trackeada por los motores de busqueda-->
+        <cite>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor excepturi laboriosam hic dicta necessitatibus magnam quisquam quo doloribus minus fugit sapiente inventore autem veritatis eum itaque, neque labore consectetur velit possimus sequi suscipit officiis blanditiis vel eveniet. Illum, excepturi. Commodi, non! Repudiandae omnis in deleniti numquam eum perferendis voluptatibus accusamus.
+        </cite>
+
+        <!--Pre hace que se vea talcual lo escribi, onda con saltos etc-->
+        <pre>
+        <p>Esto quiero que se vea
+             tal cual en la pagina</p>
+            </pre>
+
+        <!--
+            Caracteres especiales: 
+            &nbsp; in blank space, inserta espacios en blanco ahi, el signo de copyright &copy; -->
+
+        <!--El for permite enlazar el label con un imput text, osea que si haces click
+        en el label, el cursor o el control o foco pasa al imput al que le enlazo..-->
+        <label for="idNombre">Nombre:</label>
+        <input name="nombre" type="text" placeholder="Ingrese nombre" id="idNombre">
+            
+        <label for="txtMail">Mail:</label>
+        <input type="mail" name="Mail" id="txtMail" required autocomplete="off" placeholder="ingrese su mail">
+        
+        <label for="idContra">Contraseña</label>
+        <input id="idContra" name="contraseña" type="password" name="" id="">
+        <!--Por default le pone enviar, depende el navegador, google le pone enviar, firefox
+        le pone enviar consulta etc
+        El name lo que hace es ir a la petision como nombre de variable, y el valor osea el value
+        iba como valor de esa variable, por default la tira por get la petision, osea que en la url deberia
+        verse esa petision, onda ?nombre="loQueEscribioElUser"-->
+        
+        <fieldset>
+            <legend>Generos</legend>
+            <input value="masculino" type="radio" name="genero" id="" checked> Masculino
+            <input value="femenino" type="radio" name="genero" id=""> Femenino
+        </fieldset>
+
+        <fieldset>
+            <legend>Deportes</legend>
+            <input value="football" type="checkbox" name="deporte" id="" checked> Football
+            <input value="tennis" type="checkbox" name="deporte" id=""> Tennis
+            <input value="golf" type="checkbox" name="deporte" id=""> Golf
+            <input value="basket" type="checkbox" name="deporte" id=""> Basket
+        </fieldset>
+
+        <select name="Comidas" id="">
+            <option value="piz">Pizza</option>
+            <option value="piz">Pancho</option>
+            <option value="piz">Papa</option>
+            <option value="piz">Putas</option>
+        </select>
+        
+        <input type="submit" id="">
+    </form>
+</body>
+</html>
